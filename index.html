@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/index.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Weather</title>
+</head>
+<body>
+ <main class="weather_container">
+    <section class="main_weather">
+     <div class="left_side">
+        <div class="top_date">
+            <h3 id="city_name">city</h3>
+            <h3 id="date_show">date</h3>
+        </div>
+<div class="bottom_in_main">
+ <div class="temperature">
+    <div id="image_temp"> 
+      
+        <img id="weather_image" src="" alt=""> 
+    </div>
+    <h1 id="temperature">00 C</h1>
+    <h2 id="condition"></h2>
+ </div>
+ <div class="humidity">
+   <h3 id="wind_speed">Wind Speed</h3>
+   <h3 id="humidity">Humidity</h3>
+    </div>
+</div>
+<div class="other_weather" id="days_weather">
+
+
+</div>
+     </div>
+        <aside class="right_side">
+            <div class="search_icon">
+<div class="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="45" viewBox="0 0 50 50">
+        <path d="M 21 3 C 11.622998 3 4 10.623005 4 20 C 4 29.376995 11.622998 37 21 37 C 24.712383 37 28.139151 35.791079 30.9375 33.765625 L 44.085938 46.914062 L 46.914062 44.085938 L 33.886719 31.058594 C 36.443536 28.083 38 24.223631 38 20 C 38 10.623005 30.377002 3 21 3 z M 21 5 C 29.296122 5 36 11.703883 36 20 C 36 28.296117 29.296122 35 21 35 C 12.703878 35 6 28.296117 6 20 C 6 11.703883 12.703878 5 21 5 z"></path>
+        </svg>
+</div>
+            </div>
+            <div class="search ">
+                <div class="closeicon" onclick="close_search()">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+                        <path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"></path>
+                        </svg>
+                </div>
+                <label for="search">Search:</label>
+                <input type="search"  id="search">
+                <div class="search_icon_svg_inner" >
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="40" viewBox="0 0 50 50">
+                        <path d="M 21 3 C 11.622998 3 4 10.623005 4 20 C 4 29.376995 11.622998 37 21 37 C 24.712383 37 28.139151 35.791079 30.9375 33.765625 L 44.085938 46.914062 L 46.914062 44.085938 L 33.886719 31.058594 C 36.443536 28.083 38 24.223631 38 20 C 38 10.623005 30.377002 3 21 3 z M 21 5 C 29.296122 5 36 11.703883 36 20 C 36 28.296117 29.296122 35 21 35 C 12.703878 35 6 28.296117 6 20 C 6 11.703883 12.703878 5 21 5 z"></path>
+                        </svg>
+                    </div>
+            </div>
+            <div class="saved_search_contain">
+                <h4 id="saved"></h4>
+            </div>
+        </aside>
+    </section>
+    <script src="js/index.js"></script>
+ </main>
+</body>
+</html>
