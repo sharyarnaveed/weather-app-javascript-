@@ -111,9 +111,9 @@ function weather() {
     the_humidity.innerHTML = ``;
     cityshow.innerHTML = ``;
     days_weather.innerHTML = ``;
-
-
-    let p = fetch(`https://api.weatherapi.com/v1/forecast.json?key=7acfc2607ec2414291a110512233009&q=${searchval}&days=4&aqi=no&alerts=yes`);
+const apikey='xyz';
+    
+    let p = fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apikey}&q=${searchval}&days=4&aqi=no&alerts=yes`);
 
     p.then((js_return) => {
         return js_return.json();
